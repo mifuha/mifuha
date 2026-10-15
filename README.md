@@ -10,7 +10,7 @@ I'm also a keen runner and tennis enthusiast, with an interest in sports data an
 
 [View the comparison](https://runwx-api-f6n35ol7sa-ew.a.run.app/).
 
-It combines historical race results and hourly weather data using Python, BigQuery, dbt and Cloud Run to power a small comparison website. Much of the work involves messy source data, timestamps and making loads repeatable.
+It combines historical race results and hourly weather data in a Python and dbt pipeline on Google Cloud Platform (GCP). Cloud Storage holds pipeline artifacts, BigQuery stores and analyses the data, and Cloud Run runs processing jobs and serves the comparison website. Much of the work involves messy source data, timestamps and making loads repeatable.
 
 It's still evolving. The comparisons explore patterns rather than establish cause and effect.
 
