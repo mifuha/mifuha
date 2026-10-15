@@ -8,6 +8,8 @@ I'm also a keen runner and tennis enthusiast, with an interest in sports data an
 
 [RunWx](https://github.com/mifuha/runwx) is my personal project exploring race pace and weather across different editions of the same race.
 
+[View the comparison](https://runwx-api-f6n35ol7sa-ew.a.run.app/).
+
 It combines historical race results and hourly weather data using Python, BigQuery, dbt and Cloud Run to power a small comparison website. Much of the work involves messy source data, timestamps and making loads repeatable.
 
 It's still evolving. The comparisons explore patterns rather than establish cause and effect.
