@@ -19,8 +19,8 @@ It's still evolving. The comparisons explore patterns rather than establish caus
 ## Selected open-source contributions
 
 - [**Prefect**](https://github.com/PrefectHQ/prefect/pull/23412) · **Merged** — Added opt-in clearing of deployment schedules, preserving existing behaviour and covering CLI and SDK compatibility.
-- [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Fixed dataset filtering that unexpectedly changed player timelines and minutes played in the original dataset.
-- [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Preserved HTTP error details so gear requests correctly return empty results on HTTP 404.
+- [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Identified and fixed dataset filtering that unexpectedly changed player timelines and minutes played in the original dataset.
+- [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Traced broken HTTP 404 handling to missing response details and fixed empty-result handling for gear requests.
 - [**Stravalib**](https://github.com/stravalib/stravalib/pull/747) · **Merged** — Updated token revocation for Strava's new OAuth endpoint, with authentication handling and regression tests.
-- [**DataBallPy**](https://github.com/Alek050/databallpy/pull/403) · **Merged** — Fixed saving NumPy numeric game metadata to JSON, with regression tests for preserving values through save/load.
-- [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Proposed a fix for duplicate rows in incremental loads when switching between dictionaries and Arrow/pandas data.
+- [**DataBallPy**](https://github.com/Alek050/databallpy/pull/403) · **Merged** — Identified and fixed failures when saving NumPy numeric game metadata to JSON, with save/load regression tests.
+- [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Identified incremental state loss when switching between dictionaries and Arrow/pandas data; proposed a fix to prevent duplicate loads.
