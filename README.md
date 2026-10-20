@@ -18,9 +18,8 @@ It's still evolving. The comparisons explore patterns rather than establish caus
 
 ## Selected open-source contributions
 
+- [**Prefect**](https://github.com/PrefectHQ/prefect/pull/23412) · **Merged** — Added opt-in clearing of deployment schedules, preserving existing behaviour and covering CLI and SDK compatibility.
 - [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Fixed dataset filtering that unexpectedly changed player timelines and minutes played in the original dataset.
+- [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Preserved HTTP error details so gear requests correctly return empty results on HTTP 404.
 - [**Stravalib**](https://github.com/stravalib/stravalib/pull/747) · **Merged** — Updated token revocation for Strava's new OAuth endpoint, with authentication handling and regression tests.
-- [**GarminDB**](https://github.com/tcgoetz/GarminDB/pull/329) · **Merged** — Added a simple progress-output mode to make imports easier to follow in Docker and captured logs.
-- [**SportsDataverse**](https://github.com/sportsdataverse/sportsdataverse-py/issues/564) · **Bug report, fixed upstream** — Found a validation command reporting success when every comparison failed. Another contributor [implemented the fix](https://github.com/sportsdataverse/sportsdataverse-py/pull/711).
 - [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Proposed a fix for duplicate rows in incremental loads when switching between dictionaries and Arrow/pandas data.
-- [**Apache Iceberg (Python)**](https://github.com/apache/iceberg-python/pull/4024) · **Open PR** — Added regression coverage for schema changes and appended rows surviving concurrent commit retries.
