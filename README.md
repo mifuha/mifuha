@@ -23,4 +23,5 @@ It's still evolving. The comparisons explore patterns rather than establish caus
 - [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Traced broken HTTP 404 handling to missing response details and fixed empty-result handling for gear requests.
 - [**Stravalib**](https://github.com/stravalib/stravalib/pull/747) · **Merged** — Updated token revocation for Strava's new OAuth endpoint, with authentication handling and regression tests.
 - [**DataBallPy**](https://github.com/Alek050/databallpy/pull/403) · **Merged** — Identified and fixed failures when saving NumPy numeric game metadata to JSON, with save/load regression tests.
+- [**Tennis-Data-Pipeline**](https://github.com/nick-benelli/Tennis-Data-Pipeline/pull/1) · **Merged** — Identified and fixed two incorrect Wimbledon match associations, with regression tests for conflicting player names and rounds.
 - [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Identified incremental state loss when switching between dictionaries and Arrow/pandas data; proposed a fix to prevent duplicate loads.
