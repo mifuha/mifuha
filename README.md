@@ -1,26 +1,24 @@
 # Hi, I'm Miha 👋
 
-I'm a Python developer with a background in backend development and data engineering. I enjoy figuring out why systems aren't behaving as expected, especially when things look fine on the surface but the data tells a different story.
+I'm a Python developer with a background in backend development and data engineering. I enjoy figuring out why things aren't working as expected, especially when the code runs but the data looks wrong.
 
-I'm also a keen runner and tennis enthusiast, with an interest in sports data and the technology behind fitness and training applications.
+I'm also a keen runner and tennis enthusiast, so I'm naturally drawn to sports data and the technology behind fitness apps.
 
 ## RunWx
 
-[RunWx](https://github.com/mifuha/runwx) is my personal project exploring race pace and weather across different editions of the same race.
+[RunWx](https://github.com/mifuha/runwx) is my personal project comparing race pace and weather across five courses and 61 editions. [View the comparison](https://runwx-api-f6n35ol7sa-ew.a.run.app/).
 
-[View the comparison](https://runwx-api-f6n35ol7sa-ew.a.run.app/).
+It uses Python and dbt on Google Cloud (GCP): Cloud Storage for files, BigQuery for analysis, and Cloud Run for processing jobs and the read-only API behind the website.
 
-It combines historical race results and hourly weather data in a Python and dbt pipeline on Google Cloud Platform (GCP). Cloud Storage holds pipeline artifacts, BigQuery stores and analyses the data, and Cloud Run runs processing jobs and serves the comparison website. Much of the work involves messy source data, timestamps and making loads repeatable.
-
-I also built Airflow workflows to coordinate the pipeline, validating the historical workflow on Google Cloud Composer.
+Much of the work involves validating messy source data, avoiding duplicate loads and independently checking warehouse results. I also built Airflow workflows and tested the historical pipeline on Cloud Composer.
 
 It's still evolving. The comparisons explore patterns rather than establish cause and effect.
 
 ## Selected open-source contributions
 
-- [**Prefect**](https://github.com/PrefectHQ/prefect/pull/23412) · **Merged** — Added opt-in clearing of deployment schedules, preserving existing behaviour and covering CLI and SDK compatibility.
-- [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Identified and fixed dataset filtering that unexpectedly changed player timelines and minutes played in the original dataset.
+- [**Prefect**](https://github.com/PrefectHQ/prefect/pull/23412) · **Merged** — Added an option to clear deployment schedules while preserving the default behaviour, with CLI and SDK tests.
+- [**Stravalib**](https://github.com/stravalib/stravalib/pull/758) · **Merged** — Found and fixed handling that could ignore a Strava API rate limit, while keeping custom limiters compatible.
+- [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Found and fixed dataset filtering that changed player timelines and minutes played in the original data.
+- [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Found incremental state loss when switching between dictionaries and Arrow/pandas data; proposed a fix to prevent duplicate loads.
 - [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Traced broken HTTP 404 handling to missing response details and fixed empty-result handling for gear requests.
-- [**Stravalib**](https://github.com/stravalib/stravalib/pull/758) · **Merged** — Identified and fixed handling of overlapping Strava API rate limits, preserving custom limiter compatibility.
-- [**DataBallPy**](https://github.com/Alek050/databallpy/pull/403) · **Merged** — Identified and fixed failures when saving NumPy numeric game metadata to JSON, with save/load regression tests.
-- [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Identified incremental state loss when switching between dictionaries and Arrow/pandas data; proposed a fix to prevent duplicate loads.
+- [**DataBallPy**](https://github.com/Alek050/databallpy/pull/403) · **Merged** — Found and fixed failures when saving NumPy game metadata to JSON, with save/load regression tests.
