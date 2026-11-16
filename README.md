@@ -21,4 +21,4 @@ It's still evolving. The comparisons explore patterns rather than establish caus
 - [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Found and fixed dataset filtering that changed player timelines and minutes played in the original data.
 - [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Found incremental state loss when switching between dictionaries and Arrow/pandas data; proposed a fix to prevent duplicate loads.
 - [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Traced broken HTTP 404 handling to missing response details and fixed empty-result handling for gear requests.
-- [**DataBallPy**](https://github.com/Alek050/databallpy/pull/403) · **Merged** — Found and fixed failures when saving NumPy game metadata to JSON, with save/load regression tests.
+- [**statsbombpy**](https://github.com/hudl/statsbombpy/pull/87) · **Merged** — Found and fixed a naming mismatch that left 50/50 event outcomes nested instead of exposing them as dataframe columns, with regression tests.
