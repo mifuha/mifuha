@@ -17,7 +17,7 @@ It's still evolving. The comparisons explore patterns rather than establish caus
 ## Selected open-source contributions
 
 - [**Prefect**](https://github.com/PrefectHQ/prefect/pull/23412) · **Merged** — Added an option to clear deployment schedules while preserving the default behaviour, with CLI and SDK tests.
-- [**Stravalib**](https://github.com/stravalib/stravalib/pull/758) · **Merged** — Found and fixed handling that could ignore a Strava API rate limit, while keeping custom limiters compatible.
+- **Stravalib** · **Merged** — Found and fixed [incomplete activity pagination](https://github.com/stravalib/stravalib/pull/756) and [incorrect API rate-limit handling](https://github.com/stravalib/stravalib/pull/758), with regression tests.
 - [**Kloppy**](https://github.com/PySport/kloppy/pull/631) · **Merged** — Found and fixed dataset filtering that changed player timelines and minutes played in the original data.
 - [**dlt**](https://github.com/dlt-hub/dlt/pull/4548) · **Open PR** — Found incremental state loss when switching between dictionaries and Arrow/pandas data; proposed a fix to prevent duplicate loads.
 - [**python-garminconnect**](https://github.com/cyberjunky/python-garminconnect/pull/470) · **Merged** — Traced broken HTTP 404 handling to missing response details and fixed empty-result handling for gear requests.
